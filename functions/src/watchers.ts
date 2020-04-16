@@ -7,7 +7,7 @@ const keywords = ["érettségi"]
 
 export default keywords.reduce((a, keyword) => Object.assign(a, {
     [keyword.normalize('NFD').replace(/[\u0300-\u036f]/g, "")]:
-        functions.pubsub.schedule("* * * * *").onRun(async () => {
+        functions.pubsub.schedule("*/30 * * * *").onRun(async () => {
             const cMethodName = 'finder'
             const cParam = `evszam=2020&sorszam=&kibtip=nincs&szo=${keyword}&pontosszo=0&cimben=0&kozlony=0&szolg=undefined&oldaltol=0&oldalig=9`
 
