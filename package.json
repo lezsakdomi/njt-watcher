@@ -1,0 +1,11 @@
+{
+  "name": "njt-watcher",
+  "version": "0.1.0",
+  "description": "njt.hu watcher",
+  "main": "index.js",
+  "author": "Domonkos Lezsák <lezsakdomi1@gmail.com>",
+  "license": "GPL-1.0-or-later",
+  "devDependencies": {
+    "firebase-tools": "^8.0.3"
+  }
+}
